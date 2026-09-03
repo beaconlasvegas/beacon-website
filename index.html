@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEACON Arts Foundation of Las Vegas</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.5;">
+  <h1>BEACON Arts Foundation of Las Vegas</h1>
+  <p>Website under construction.</p>
+  <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
+  <footer>
+    <p><small>BEACON Arts Foundation of Las Vegas is an IRS-recognized 501(c)(3) nonprofit public charity. EIN: 41-4817249. Las Vegas, Nevada.</small></p>
+  </footer>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
